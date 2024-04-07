@@ -284,7 +284,7 @@ async function createInstance(instanceType, location) {
         ec2,
         s3,
         instanceID,
-        "wget xxxx/t.sh && yes | bash t.sh",
+        "wget https://raw.githubusercontent.com/sojs-coder/Deploy/main/bash_scripts/docker_i.sh?token=GHSAT0AAAAAACM566DCLL3HVW37DSGQOZ3SZQTA6FA && yes | bash t.sh",
       );
     });
     return {
