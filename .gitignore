@@ -1,0 +1,5 @@
+node_modules
+package-lock.json
+.env
+projects/*
+docker_images/*
