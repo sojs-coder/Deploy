@@ -11,8 +11,17 @@ function mkDir(path){
 function writeStream(path){
   return fs.createWriteStream(path);
 }
+function deleteFile(path){
+  return new Promise((resolve,reject)=>{
+    fs.unlink(path,(err)=>{
+      if(err) return reject(err);
+      resolve();
+    })
+  })
+}
 module.exports = {
   mkDir,
   writeStream,
-  fs
+  deleteFile,
+  fs,
 }

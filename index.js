@@ -9,5 +9,5 @@ const app = express();
 app.use(routes);
 
 app.listen(3000, () => {
-  console.log('server started');
+  console.log('@ app.listen: server started');
 });

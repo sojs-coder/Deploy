@@ -3,3 +3,4 @@ package-lock.json
 .env
 projects/*
 docker_images/*
+temp_kp/*
